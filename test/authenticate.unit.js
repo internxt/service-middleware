@@ -474,7 +474,7 @@ describe('Authenticate', function() {
       sandbox.restore();
     });
     it('will verify signature as true', function() {
-      var hash = new Buffer('86e663b4892a64c45e804874d59436fbddce2557d1005a2908755fe9e5827636', 'hex');
+      var hash = Buffer.from('86e663b4892a64c45e804874d59436fbddce2557d1005a2908755fe9e5827636', 'hex');
       var signature = '30450221009c0bdfd7dca49c71ae46d1b74511a509442ebbb1987cfe546ab760866edff59302' +
           '200948ec9027b630c50d8300a12d32a9e54185c2cb5aa4f657bde46e982d595d22';
       var pubkey = '03b3e8d348e97fe395e76532ae6436472d9ae0c38b39484c789314ac4ee8712ec4';
@@ -489,7 +489,7 @@ describe('Authenticate', function() {
       expect(middlewares.authenticate._verifySignature(req)).to.equal(true);
     });
     it('will verify signature as false', function() {
-      var hash = new Buffer('86e663b4892a64c45e804874d59436fbddce2557d1005a2908755fe9e5827636', 'hex');
+      var hash = Buffer.from('86e663b4892a64c45e804874d59436fbddce2557d1005a2908755fe9e5827636', 'hex');
       var signature = '30450221009c0bdfd7dca49c71ae46d1b74511a509442ebbb1987cfe546ab760866edff59302' +
           '200948ec9027b630c50d8300a12d32a9e54185c2cb5aa4f657bde46e982d595d11';
       var pubkey = '03b3e8d348e97fe395e76532ae6436472d9ae0c38b39484c789314ac4ee8712ec4';
@@ -504,7 +504,7 @@ describe('Authenticate', function() {
       expect(middlewares.authenticate._verifySignature(req)).to.equal(false);
     });
     it('will verify as false with invalid signature and public key', function() {
-      var hash = new Buffer('86e663b4892a64c45e804874d59436fbddce2557d1005a2908755fe9e5827636', 'hex');
+      var hash = Buffer.from('86e663b4892a64c45e804874d59436fbddce2557d1005a2908755fe9e5827636', 'hex');
       var signature = '30450221009c0bdfd7dca49c71ae46d1b74511a509442ebbb1987cfe5';
       var pubkey = '03b3e8d34';
       var req = {
