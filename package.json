@@ -30,8 +30,8 @@
     "basic-auth": "^1.0.4",
     "concat-stream": "^1.5.2",
     "redis": "^2.7.1",
-    "storj-service-error-types": "^1.4.0"
     "secp256k1": "^4.0.0",
+    "storj-service-error-types": "^1.4.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
