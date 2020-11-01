@@ -1,4 +1,4 @@
-# Internxt Service Middleware
+# Internxt Service Middleware [![Build Status](https://travis-ci.com/internxt/service-middleware.svg?branch=master)](https://travis-ci.com/internxt/service-middleware)
 
 Common Express middleware for various Internxt services.
 
