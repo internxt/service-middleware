@@ -1,9 +1,9 @@
-# Storj Service Middleware
+# Internxt Service Middleware
 
-Common Express middleware for various Storj services.
+Common Express middleware for various Internxt services.
 
 ```bash
-$ npm install storj-service-middleware --save
+$ npm install internxt/service-middleware --save
 ```
 
 ```javascript
